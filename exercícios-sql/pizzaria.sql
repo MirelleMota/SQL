@@ -47,13 +47,13 @@ SELECT * FROM tb_pizzas WHERE preco BETWEEN 50 and 100;
 
 SELECT * FROM tb_pizzas WHERE sabor LIKE "%m%";
 
-SELECT * FROM tb_categorias WHERE descricao LIKE "%doce%";
+SELECT * FROM tb_ WHERE descricao LIKE "%doce%";
 
 SELECT * FROM tb_pizzas INNER JOIN tb_categorias 
 ON tb_categorias.id = tb_pizzas.categoria_id;
 
-SELECT sabor FROM tb_pizzas INNER JOIN tb_categorias 
-ON tb_categorias.id = tb_pizzas.categoria_id WHERE descricao LIKE "%doce%";
+SELECT * FROM tb_pizzas INNER JOIN tb_categorias 
+ON tb_categorias.id = tb_pizzas.categoria_id WHERE descricao = "doce";
 
 
 
